@@ -1,0 +1,154 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('photo2.jpg') no-repeat center center/cover;
+  color: white;
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #007bff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffdd57 !important;
+  text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#home p {
+  font-size: 1.2rem;
+}
+
+#home .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+#home .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #000428, #004e92);
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+   /* Media Queries */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+  #home p {
+    font-size: 1rem;
+  }
+
+  #home {
+    padding: 50px 0;
+  }
+
+  #about-me .card-body {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .row.g-4 {
+    flex-direction: column;
+  }
+
+  .col-md-6.col-lg-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #contact-me .form-control {
+    font-size: 0.9rem;
+  }
+
+  #contact-me .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 0.9rem;
+  }
+
+  #home {
+    padding: 30px 0;
+  }
+}
